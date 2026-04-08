@@ -10,6 +10,13 @@ on:
         type: string
 
 jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Hello World demo
+        run: echo "Hello World"
+
   login:
     runs-on: ubuntu-latest
     steps:
