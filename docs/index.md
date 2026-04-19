@@ -16,10 +16,10 @@ As solving the above issue requires addition of various vulnerabilities, hence i
 ![VulnerableApp-facade UI](https://raw.githubusercontent.com/SasanLabs/VulnerableApp-facade/main/docs/images/gif/VulnerableApp-Facade.gif)
 
 ## Technologies used
-- Java8
+- Java17
 - Spring Boot
 - ReactJS
-- Vanilla Javascript
+- Javascript/TypeScript
 
 ## How to use this tool
 

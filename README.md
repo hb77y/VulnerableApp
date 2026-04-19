@@ -46,11 +46,11 @@ There are multiple ways in which you can contribute to the project:
 
 ## Running the project
 There are 2 ways to run the project:
-1. The simplest way to run the project is using Docker containers which will run the full-fleged VulnerableApplication with all the components. For running as Docker application, follow following steps:
+1. The simplest way to run the project is using Docker containers which run the full-fledged VulnerableApplication with all the components. For running as a Docker application, follow these steps:
     1. Download and Install [Docker Compose](https://docs.docker.com/compose/install/) 
     2. Clone this Github repository
     3. Open the terminal and Navigate to the Project root directory
-    4. Run the command ```docker-compose pull && docker-compose up```
+    4. Run the command ```docker compose pull && docker compose up```
     5. Navigate to browser and visit `http://localhost` and this will give the User Interface for VulnerableApp.
     
     **Note**: The above steps will run the latest unreleased VulnerableApp version. If you want to run the latest released version, please use docker **latest** tag.
@@ -62,9 +62,9 @@ There are 2 ways to run the project:
 
 ## Building the project
 There are 2 ways in which this project can be built and used:
-1. As a Docker application which will help in running the full-fledged VulnerableApplication. For running as Docker application, follow following steps:
+1. As a Docker application which will help in running the full-fledged VulnerableApplication. For running as a Docker application, follow these steps:
     1. Build the docker image by running `./gradlew jibDockerBuild`
-    2. Download [Docker-Compose](https://github.com/SasanLabs/VulnerableApp-facade/blob/main/docker-compose.yml) and run in the same directory `docker-compose up`
+    2. Download [Docker-Compose](https://github.com/SasanLabs/VulnerableApp-facade/blob/main/docker-compose.yml) and run in the same directory `docker compose up`
     3. Navigate to browser and visit `http://localhost` and this will give the User Interface for VulnerableApp.
 2. As a SpringBoot application which will run with the Legacy UI or Rest API but gives the benefit of debugging and solving issues. This is the simple way, 
     1. Import the project into your favorite IDE and run it
@@ -91,6 +91,13 @@ VulnerableApp-facade provides a modern UI for VulnerableApp. To test your local 
 This script will build your local changes into a Docker image (`sasanlabs/owasp-vulnerableapp:unreleased`) and start the full stack (including facade, jsp, and php services) using `docker-compose.local.yml`.
 
 3. **Access the UI**: Navigate to `http://localhost` to see the modern UI with your changes.
+
+## Running tests
+Use Gradle to run tests:
+
+```bash
+./gradlew test
+```
 
 ## Contact
 In case you are stuck with any of the steps or understanding anything related to project and its goals, feel free to shoot a mail at karan.sasan@owasp.org or raise an [issue](https://github.com/SasanLabs/VulnerableApp/issues) and we will try our best to help you.
